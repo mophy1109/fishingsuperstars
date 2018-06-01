@@ -1,0 +1,227 @@
+{
+   "style" : "default",
+   "config" : "wildfishing.dat",
+   "width" : 500,
+   "height" : 600,
+   "cancelname" : "取消",
+   "okname" : "开始",
+   "views" : [
+      {
+         "text" : "普通设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "color" : "100,100,100",
+               "text" : "浮标类型（入水颜色）",
+               "type" : "Label"
+            },
+            {
+               "id" : "baitcolor",
+               "list" : "红色浮标,黄色浮标",
+               "select" : "0",
+               "type" : "ComboBox",
+               "orientation" : "horizontal"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "擦擦方式",
+               "type" : "Label"
+            },
+            {
+               "id" : "caca",
+               "list" : "擦擦1,擦擦2",
+               "select" : "0",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal"
+            },
+			{
+               "color" : "100,100,100",
+               "text" : "是否放生",
+               "type" : "Label"
+            },
+            {
+               "id" : "gofree",
+               "list" : "否,是",
+               "select" : "0",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "抛竿延时(ms)",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "castdelay",
+               "kbtype" : "number",
+               "prompt" : "与距离相关",
+               "text" : "100",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "擦擦延时(ms)",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "delay",
+               "kbtype" : "number",
+               "prompt" : "断线则加，不断则适当减",
+               "text" : "20",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "使用能量",
+               "type" : "Label"
+            },
+            {
+               "id" : "energy",
+               "list" : "是,否",
+               "select" : "0",
+               "type" : "ComboBox",
+               "orientation" : "horizontal"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "放入水箱的鱼种",
+               "type" : "Label"
+            },
+            {
+               "id" : "putred",
+               "list" : "小BOSS（红名鱼）",
+               "type" : "CheckBoxGroup",
+               "width" : 180
+            },
+            {
+               "id" : "putpurple",
+               "list" : "大BOSS（紫名鱼）",
+               "type" : "CheckBoxGroup",
+               "width" : 180
+            }
+         ]
+      },
+      {
+         "text" : "高级设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "color" : "100,100,100",
+               "text" : "模式选择",
+               "type" : "Label"
+            },
+            {
+               "id" : "mode",
+               "list" : "野钓,无尽刷电池（测试）,半自动（测试）",
+               "select" : "0",
+               "type" : "ComboBox",
+               "orientation" : "horizontal"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "找浮标延时(ms)",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "finddelay",
+               "kbtype" : "number",
+               "prompt" : "若会提前提杆则加大",
+               "text" : "800",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "找色精确度（1~100）",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "degree",
+               "kbtype" : "number",
+               "prompt" : "建议值80~90",
+               "text" : "90",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "找浮标精确度（1~100）",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "baitdegree",
+               "kbtype" : "number",
+               "prompt" : "建议值70~90",
+               "text" : "80",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "抛竿范围",
+               "type" : "Label"
+            },
+            {
+               "id" : "range",
+               "list" : "默认,脚下",
+               "select" : "0",
+               "type" : "ComboBox",
+               "orientation" : "horizontal"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "找浮标最大次数",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "baitcount",
+               "kbtype" : "number",
+               "prompt" : "默认值100，当部分地图浮标无法识别时设置到50左右，值越大最大等待时间越长",
+               "text" : "100",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "全局查找延时",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "unidelay",
+               "kbtype" : "number",
+               "prompt" : "此项目为未越狱用户设置，根据卡顿情况设置，建议值300~700，越狱用户设置为0即可",
+               "text" : "0",
+               "type" : "Edit"
+            },
+            {
+               "color" : "0,0,0",
+               "text" : "参数说明：（若不知道参数用途，请勿随意修改）\n　找浮标延时：默认值800；若出现浮标入水后提前提杆，适当增加。（可以减少因钓竿动画时间长导致浮标被遮挡的问题。数值过大会导致抓取浮标延迟长。\n　找色精确度：默认值90；出现卡屏的情况时尝试修改，建议值70~90。\n　找浮标精确度：默认值70；若一直出现不提杆/提前提杆现象，可尝试增加/减小。更改此项之前请先尝试修改找浮标延时，并在不同地图中测试。\n　抛竿范围：当抛在脚下始终不能正常提杆时，请选择[抛脚下]。正常钓鱼时请使用[默认]。\n　找浮标最大次数：影响最大提杆时间，若是任何距离下都会提前提杆，请尝试增加。\n 全局查找延时：为免越狱脚本用户设置，使用叉叉助手的越狱玩家请设置为0。设置两次循环的间隔，减少卡顿。建议值300~700。",
+               "type" : "Label",
+               "size" : 20
+            }
+         ]
+      },
+      {
+         "text" : "关于",
+         "type" : "Page",
+         "views" : [
+            {
+               "color" : "0,0,0",
+               "text" : "【购买说明】\n脚本试用时间每天10分钟，到期请点击链接自助购买或者加QQ群了解详情。\n\n【注意事项】\n该脚本并不为公会战编写，但为防止用于工会战等玩家竞争，目前该脚本只开放日卡（3元）/周卡（15元）/月卡（40元），若是刷金币周卡已基本足够。\n\n若发生卡屏请适当调整找色精度，无法解决请加QQ群反馈。\n\n脚本只是代替手工操作，切勿用于公会竞争，因使用脚本造成封号的请自行承担，若频繁出现-7错误码，请立即停止使用！\n\n【问题反馈/联系作者】\nQQ群：133268481\nQQ：2434286681",
+               "type" : "Label",
+               "size" : 25
+            }
+         ]
+      }
+   ]
+}

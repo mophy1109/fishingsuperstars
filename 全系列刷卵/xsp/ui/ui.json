@@ -1,0 +1,121 @@
+{
+   "style" : "default",
+   "config" : "eggconfig.dat",
+   "width" : 500,
+   "height" : 600,
+   "cancelname" : "取消",
+   "okname" : "开始",
+   "views" : [
+      {
+         "text" : "参数设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "color" : "100,100,100",
+               "text" : "擦擦延时(ms)",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "delay",
+               "kbtype" : "number",
+               "prompt" : "建议值10~20",
+               "text" : "15",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "抛竿延时(ms)",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "castdelay",
+               "kbtype" : "number",
+               "prompt" : "建议值100~200",
+               "text" : "100",
+               "type" : "Edit"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "找色精确度（1~100）",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "degree",
+               "kbtype" : "number",
+               "prompt" : "建议值80~90",
+               "text" : "90",
+               "type" : "Edit"
+            },
+						{
+               "color" : "100,100,100",
+               "text" : "找浮标精确度（1~100）",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "baitdegree",
+               "kbtype" : "number",
+               "prompt" : "建议值70~90",
+               "text" : "80",
+               "type" : "Edit"
+            }
+         ]
+      },
+      {
+         "text" : "其他设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "color" : "100,100,100",
+               "text" : "浮标类型（入水颜色）",
+               "type" : "Label"
+            },
+            {
+               "id" : "baitcolor",
+               "list" : "红色浮标,黄色浮标",
+               "select" : "0",
+               "type" : "ComboBox",
+               "orientation" : "horizontal"
+            },
+            {
+               "color" : "100,100,100",
+               "text" : "擦擦方式",
+               "type" : "Label"
+            },
+            {
+               "id" : "caca",
+               "list" : "擦擦1,擦擦2",
+               "select" : "0",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal"
+            },
+						{
+               "color" : "100,100,100",
+               "text" : "全局查找延时",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,100,0",
+               "id" : "unidelay",
+               "kbtype" : "number",
+               "prompt" : "此项目为未越狱用户设置，根据卡顿情况设置，建议值300~700，越狱用户设置为0即可",
+               "text" : "0",
+               "type" : "Edit"
+            },
+            {
+               "id" : "lock",
+               "list" : "完成后锁屏（仅越狱有效）",
+               "type" : "CheckBoxGroup"
+            }
+         ]
+      }
+   ]
+}
